@@ -1,0 +1,60 @@
+<node>
+    <name>blog</name>
+    <property>
+        <name>sling:resourceType</name>
+        <value>capgemini/blog</value>
+        <type>String</type>
+    </property>
+
+    <node>
+        <name>post1</name>
+        <property>
+            <name>sling:resourceType</name>
+            <value>capgemini/blogpost</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>title</name>
+            <value>Young Talent Community Hackaton for non-coders</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>body</name>
+            <value>On September 18th, the Young Talent Community of AppsTwo will organise a 'hackaton for non coders'.In this fun-event, they will try to learn non-coders some of the tricks that you can do while coding.</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>author</name>
+            <value>Koen</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>cowrittenBy</name>
+            <value>YTC AppsTwo</value>
+            <type>String</type>
+        </property>
+    </node>
+    <node>
+        <name>post2</name>
+        <property>
+            <name>sling:resourceType</name>
+            <value>capgemini/blogpost</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>title</name>
+            <value>Waddle for Science! Penguins Join Protest March</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>body</name>
+            <value>Science advocates around the world turned out in droves to take part in the March for Science over the weekend, and the demonstration even found support from members of the animal kingdom: African penguins at the Monterey Bay Aquarium in California took part in a mini March for Science, waddling around in support of the cause. The "March of the Penguins for Science," as the aquarium called it, included five African penguins taking an "enrichment walk" with staff and volunteers joining in. Some of the onlookers held signs, including ones saying, "Science gives us happy feet," and "Honk honk, bray bray, African penguins are here to stay."</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>author</name>
+            <value>Kacey Deamer</value>
+            <type>String</type>
+        </property>
+    </node>
+</node>

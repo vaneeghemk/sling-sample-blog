@@ -1,0 +1,14 @@
+<div data-sly-use.blogPostModel="com.capgemini.example.models.BlogPostModel">
+    <h1>${blogPostModel.title}</h1>
+    <p>${blogPostModel.body}</p>
+    <p data-sly-test.isCowritten="${blogPostModel.cowrittenBy}" style="font-size:0.6em;color:gray;">Written by ${blogPostModel.author} & ${blogPostModel.cowrittenBy}
+        on ${ 'dd-MMMM-yyyy hh:mm:ss' @
+        format=blogPostModel.createdOn,
+        timezone='CEST',
+        locale='en'}.</p>
+    <p data-sly-test="${!isCowritten}" style="font-size:0.6em;color:gray;">Written by ${blogPostModel.author}
+        on ${ 'dd-MMMM-yyyy hh:mm:ss' @
+        format=blogPostModel.createdOn,
+        timezone='CEST',
+        locale='en'}.</p>
+</div>

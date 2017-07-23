@@ -54,6 +54,28 @@
                     <password>admin</password>
                 </configuration>                
             </plugin>
+            <plugin>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>htl-maven-plugin</artifactId>
+                <version>1.0.6</version>
+                <executions>
+                    <execution>
+                        <id>validate-scripts</id>
+                        <goals>
+                            <goal>validate</goal>
+                        </goals>
+                        <phase>compile</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <sourceDirectory>src/main/resources/SLING-INF/apps</sourceDirectory>
+                    <failOnWarnings>true</failOnWarnings>
+                    <includes>
+                        <include>*.html</include>
+                    </includes>
+
+                </configuration>
+            </plugin>
         </plugins>
     </build>
     <profiles>

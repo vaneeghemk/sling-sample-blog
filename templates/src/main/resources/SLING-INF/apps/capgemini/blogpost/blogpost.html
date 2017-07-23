@@ -1,7 +1,7 @@
 <div data-sly-use.blogPostModel="com.capgemini.example.models.BlogPostModel">
     <h1>${blogPostModel.title}</h1>
     <p>${blogPostModel.body}</p>
-    <p data-sly-test.isCowritten="${blogPostModel.cowrittenBy}" style="font-size:0.6em;color:gray;">Written by ${blogPostModel.author} & ${blogPostModel.cowrittenBy}
+    <p data-sly-test.isCowritten="${blogPostModel.cowrittenBy}" style="font-size:0.6em;color:gray;">Written by ${blogPostModel.author} &amp; ${blogPostModel.cowrittenBy}
         on ${ 'dd-MMMM-yyyy hh:mm:ss' @
         format=blogPostModel.createdOn,
         timezone='CEST',

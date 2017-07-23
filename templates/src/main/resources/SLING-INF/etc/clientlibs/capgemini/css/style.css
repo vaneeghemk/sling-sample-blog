@@ -1,0 +1,12 @@
+body {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    background: #eee;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 0;
+}

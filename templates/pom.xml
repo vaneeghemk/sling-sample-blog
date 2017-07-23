@@ -34,12 +34,10 @@
                 <version>3.0.0</version>
                 <configuration>
                     <instructions>
-                        <Sling-Nodetypes>
-                            SLING-INF/nodetypes/nodetypes.cnd
-                        </Sling-Nodetypes>
                         <Sling-Initial-Content>
                             SLING-INF/apps/capgemini/blogpost;overwrite:=true;uninstall:=false;path:=/apps/capgemini/blogpost,
-                            SLING-INF/content;overwrite:=true;uninstall:=false;path:=/content
+                            SLING-INF/content;overwrite:=true;uninstall:=false;path:=/content,
+                            SLING-INF/etc/clientlibs;overwrite:=true;uninstall:=false;path:=/etc/clientlibs
                         </Sling-Initial-Content>
                     </instructions>
                 </configuration>

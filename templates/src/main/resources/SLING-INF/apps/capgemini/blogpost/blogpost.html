@@ -1,14 +1,26 @@
-<div data-sly-use.blogPostModel="com.capgemini.example.models.BlogPostModel">
+<sly data-sly-use.blogPostModel="com.capgemini.example.models.BlogPostModel" />
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${blogPostModel.title}</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="/etc/clientlibs/capgemini/css/style.css" />
+</head>
+</html>
+<body>
+<div>
     <h1>${blogPostModel.title}</h1>
+    <span data-sly-test.isCowritten="${blogPostModel.cowrittenBy}" style="font-size:0.6em;color:gray;">Written by ${blogPostModel.author} &amp; ${blogPostModel.cowrittenBy}
+    on ${ 'dd-MMMM-yyyy hh:mm:ss' @
+    format=blogPostModel.createdOn,
+    timezone='CEST',
+    locale='en'}.</span>
+    <span data-sly-test="${!isCowritten}" style="font-size:0.6em;color:gray;">Written by ${blogPostModel.author}
+        on ${ 'dd-MMMM-yyyy hh:mm:ss' @
+        format=blogPostModel.createdOn,
+        timezone='CEST',
+        locale='en'}.</span>
     <p>${blogPostModel.body}</p>
-    <p data-sly-test.isCowritten="${blogPostModel.cowrittenBy}" style="font-size:0.6em;color:gray;">Written by ${blogPostModel.author} &amp; ${blogPostModel.cowrittenBy}
-        on ${ 'dd-MMMM-yyyy hh:mm:ss' @
-        format=blogPostModel.createdOn,
-        timezone='CEST',
-        locale='en'}.</p>
-    <p data-sly-test="${!isCowritten}" style="font-size:0.6em;color:gray;">Written by ${blogPostModel.author}
-        on ${ 'dd-MMMM-yyyy hh:mm:ss' @
-        format=blogPostModel.createdOn,
-        timezone='CEST',
-        locale='en'}.</p>
 </div>
+</body>

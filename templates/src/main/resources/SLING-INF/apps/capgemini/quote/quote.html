@@ -1,0 +1,19 @@
+<sly data-sly-use.inspirationalQuoteModel="com.capgemini.example.models.InspirationalQuoteModel" />
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${blogPostModel.title}</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="/etc/clientlibs/capgemini/css/style.css" />
+</head>
+</html>
+<body>
+<div>
+    <h1 class="opening-quote">“</h1>
+    <p class="quote" style="color: #${inspirationalQuoteModel.hexColor @ context='scriptString'};">${inspirationalQuoteModel.quote}</p>
+    <h1 class="closing-quote">”</h1>
+
+    <h3>- Wisdom of ${inspirationalQuoteModel.author}</h3>
+</div>
+</body>

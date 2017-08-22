@@ -20,8 +20,8 @@ import java.util.Arrays;
 import java.util.List;
 
 @SlingServlet(resourceTypes = "capgemini/blog", methods = "GET", extensions = "json")
-public class GetAllPostsServlet extends SlingSafeMethodsServlet {
-    private static final Logger LOG = LoggerFactory.getLogger(GetAllPostsServlet.class);
+public class GetAllPostsAsJSONServlet extends SlingSafeMethodsServlet {
+    private static final Logger LOG = LoggerFactory.getLogger(GetAllPostsAsJSONServlet.class);
     private static final String SELECTOR_ALL = "all";
     private static final String SELECTOR_MOST_RECENT = "3mostrecent";
     private static final String SELECTOR_SHOW_DETAILS = "showdetails";

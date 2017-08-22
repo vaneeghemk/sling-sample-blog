@@ -10,3 +10,24 @@ h1 {
     font-family: 'Abril Fatface', cursive;
     margin-bottom: 0;
 }
+
+h3 {
+    text-align: right;
+}
+
+span {
+    font-size:0.6em;
+    color:gray;
+}
+
+.opening-quote {
+    text-align: left;
+}
+
+.closing-quote {
+    text-align: right;
+}
+
+.quote {
+    text-align: center;
+}

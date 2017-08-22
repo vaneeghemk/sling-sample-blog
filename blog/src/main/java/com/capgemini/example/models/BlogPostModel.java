@@ -23,6 +23,9 @@ public class BlogPostModel {
     @Inject @Optional
     public String cowrittenBy;
 
+    @Inject @Optional
+    public String originallyPublishedOn;
+
     @Inject @Named("jcr:created") @Expose
     public Calendar createdOn;
 
@@ -40,6 +43,10 @@ public class BlogPostModel {
 
     public String getCowrittenBy() {
         return cowrittenBy;
+    }
+
+    public String getOriginallyPublishedOn() {
+        return originallyPublishedOn;
     }
 
     public Calendar getCreatedOn() {

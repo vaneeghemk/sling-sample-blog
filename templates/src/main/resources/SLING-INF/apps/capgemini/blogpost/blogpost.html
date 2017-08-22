@@ -11,16 +11,17 @@
 <body>
 <div>
     <h1>${blogPostModel.title}</h1>
-    <span data-sly-test.isCowritten="${blogPostModel.cowrittenBy}" style="font-size:0.6em;color:gray;">Written by ${blogPostModel.author} &amp; ${blogPostModel.cowrittenBy}
+    <span data-sly-test.isCowritten="${blogPostModel.cowrittenBy}">Written by ${blogPostModel.author} &amp; ${blogPostModel.cowrittenBy}
     on ${ 'dd-MMMM-yyyy hh:mm:ss' @
     format=blogPostModel.createdOn,
     timezone='CEST',
     locale='en'}.</span>
-    <span data-sly-test="${!isCowritten}" style="font-size:0.6em;color:gray;">Written by ${blogPostModel.author}
+    <span data-sly-test="${!isCowritten}">Written by ${blogPostModel.author}
         on ${ 'dd-MMMM-yyyy hh:mm:ss' @
         format=blogPostModel.createdOn,
         timezone='CEST',
         locale='en'}.</span>
     <p>${blogPostModel.body}</p>
+    <span data-sly-test="${blogPostModel.originallyPublishedOn}">This article was originally published <a href="${blogPostModel.originallyPublishedOn @ context = 'uri'}">here</a>.</span>
 </div>
 </body>

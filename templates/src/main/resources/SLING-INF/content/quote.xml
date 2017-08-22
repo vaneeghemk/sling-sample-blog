@@ -1,0 +1,55 @@
+<node>
+    <name>quote</name>
+    <property>
+        <name>sling:resourceType</name>
+        <value>capgemini/quoteList</value>
+        <type>String</type>
+    </property>
+
+    <node>
+        <name>quote1</name>
+        <property>
+            <name>sling:resourceType</name>
+            <value>capgemini/quote</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>quote</name>
+            <value>It does not matter how slowly you go as long as you do not stop.</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>hexColor</name>
+            <value>a80000</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>author</name>
+            <value>Confusius</value>
+            <type>String</type>
+        </property>
+    </node>
+    <node>
+        <name>quote2</name>
+        <property>
+            <name>sling:resourceType</name>
+            <value>capgemini/quote</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>quote</name>
+            <value>Failure is not an option</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>hexColor</name>
+            <value>01386a</value>
+            <type>String</type>
+        </property>
+        <property>
+            <name>author</name>
+            <value>NASA</value>
+            <type>String</type>
+        </property>
+    </node>
+</node>
